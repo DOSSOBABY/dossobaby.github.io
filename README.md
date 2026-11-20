@@ -11,7 +11,7 @@ Site statique (HTML, CSS, JavaScript), sans dépendance ni étape de build, héb
 | `index.html` | Le contenu de la page |
 | `style.css` | La mise en page (thème Studio de Hallmark), précédée de son tampon de vérification |
 | `tokens.css`, `base.css` | Couleurs, polices, espacements et règles de base du thème |
-| `script.js` | La carte du système (choix d'un projet) et l'année du pied de page |
+| `script.js` | La carte du système (choix d'un projet) et le formulaire de devis (particulier, PME, entreprise), envoyé par e-mail ou WhatsApp |
 | `images/work/` | Les captures des projets, en WebP |
 | `.hallmark/` | Le journal de la refonte Hallmark (comparaison avant et après) |
 
@@ -24,8 +24,8 @@ Pour remplacer une capture, garde le même nom de fichier dans `images/work/` et
 ## Personnaliser
 
 - **Textes** : tout est dans `index.html`.
-- **Un projet** : ajoute une ligne `<li class="index__row">` dans la liste des travaux, et ses chemins dans la carte (`data-p` et `data-n` dans le SVG).
-- **Photo** : aucune photo de toi pour l'instant ; la page s'en passe.
+- **Un projet** : ajoute une ligne `<li class="index__row">` dans la liste des travaux (ses captures téléphone vont dans `.index__phones`), et ses chemins dans la carte (`data-p` et `data-n` dans le SVG, plus la ligne `chain` de `script.js`).
+- **Formulaire** : les champs propres à un profil portent `data-only` (`org`, `PME` ou `Entreprise`).
 - **Couleur** : `--color-accent` dans `tokens.css`.
 
 ## Tester en local

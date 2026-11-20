@@ -4,32 +4,36 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Abdrahamane Aly TRAORE, développeur full-stack à Bamako</title>
-  <meta name="description" content="Abdrahamane Aly TRAORE, développeur full-stack à Bamako formé en informatique de gestion à l’ESGIC : Fadi’s, Fadi’s Order, Mali Direct, A Sara Doni Doni, Manden Kalanso.">
+  <meta name="description" content="Abdrahamane Aly TRAORE, développeur full-stack à Bamako formé en informatique de gestion à l’ESGIC : Fadi’s Immobilier, Fadi’s Order, Mali Direct, A Sara Doni Doni, Manden Kalanso. Demande de devis pour particuliers, PME et entreprises.">
   <meta property="og:title" content="Abdrahamane Aly TRAORE, développeur full-stack à Bamako">
   <meta property="og:description" content="Des plateformes web et mobiles faites pour le Mali, de l’écran au paiement mobile money.">
   <meta property="og:url" content="https://dossobaby.github.io/">
-  <meta property="og:image" content="https://dossobaby.github.io/images/work/fadis-home.webp">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://dossobaby.github.io/images/og.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
   <meta name="theme-color" content="#f3f6f7">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&family=Geist:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="tokens.css">
+  <link rel="stylesheet" href="base.css">
   <link rel="stylesheet" href="style.css">
   <script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
   <a class="skip" href="#main">Aller au contenu</a>
 
-  <header class="mast proof" id="top">
+  <header class="mast" id="top">
     <div class="container mast__row">
+      <a class="wordmark" href="#top">Abdrahamane Aly TRAORE</a>
       <nav class="mast__nav" id="menu" aria-label="Sections">
         <a href="#projets">Travaux</a>
-        <a href="#competences">Système</a>
+        <a href="#demande">Devis</a>
+        <a href="#competences">Compétences</a>
         <a href="#parcours">Parcours</a>
-        <a href="#demande">Demande</a>
-        <a href="#contact">Contact</a>
       </nav>
-      <a class="wordmark" href="#top">Abdrahamane Aly TRAORE</a>
       <a class="mast__contact" href="mailto:abdrahamanealy2.0@gmail.com">abdrahamanealy2.0@gmail.com</a>
     </div>
   </header>
@@ -38,13 +42,12 @@
     <!-- Hero : Banner -->
     <section class="hero proof" id="apropos" aria-labelledby="hero-title">
       <div class="container hero__grid">
-        <h1 id="hero-title" class="guided">Des plateformes faites pour le&nbsp;Mali.</h1>
-        <div class="guides__read" aria-hidden="true"><span>Capitales 700</span><span>Ligne de base 0</span></div>
+        <h1 id="hero-title">Des plateformes faites pour le&nbsp;Mali.</h1>
         <div class="hero__side">
-          <p class="lead">Full-stack à Bamako&nbsp;: web, mobile, USSD et mobile money.</p>
+          <p class="lead">Développeur full-stack à Bamako&nbsp;: web, mobile, USSD et mobile money.</p>
           <div class="hero__actions">
-            <a class="btn btn--primary" href="mailto:abdrahamanealy2.0@gmail.com">Écrire un e-mail</a>
-            <a class="btn" href="https://wa.me/22370997781" target="_blank" rel="noopener">WhatsApp</a>
+            <a class="btn btn--primary" href="#demande">Demander un devis</a>
+            <a class="btn" href="#projets">Voir les travaux</a>
           </div>
         </div>
       </div>
@@ -61,15 +64,18 @@
           <li class="index__row index__row--lead" id="projet-fadis">
             <details>
               <summary class="index__link">
-                <h3>Fadi’s</h3>
+                <h3>Fadi’s Immobilier</h3>
                 <p>L’immobilier vérifié à Bamako&nbsp;: annonces modérées, agences contrôlées.</p>
                 <span class="index__meta"><time>2026</time><span>En ligne</span><span class="index__toggle" aria-hidden="true"></span></span>
-                <figure class="shot shot--thumb" data-slot="idx-fadis" data-kind="product"><img src="images/work/fadis-listings-thumb.webp" width="800" height="500" alt="Les biens du moment sur Fadi’s" loading="lazy"></figure>
+                <figure class="shot shot--thumb" data-slot="idx-fadis" data-kind="product"><img src="images/work/fadis-listings-thumb.webp" width="800" height="500" alt="Les biens du moment sur Fadi’s Immobilier" loading="lazy"></figure>
               </summary>
               <div class="index__more">
-                <p>Maisons, villas et terrains à vendre ou à louer. Agences vérifiées par leur RCCM, messagerie qui protège le numéro, simulateur de crédit, vente à terme, devis de constructeurs, services payants par Orange Money ou Moov.</p>
-                <p class="index__stack">Next.js, NestJS, Prisma, PostgreSQL, Socket.IO, Supabase, Vercel, Render, GitHub Actions</p>
-                <p><a class="link" href="https://fadis-web-74fg.vercel.app" target="_blank" rel="noopener">Voir le site</a> ou <a class="link" href="#fadis">l’étude de cas</a></p>
+                <div class="index__text">
+                  <p>Annonces de maisons, villas et terrains à vendre ou à louer, publiées par des agences vérifiées.</p>
+                  <p class="index__stack">Next.js, NestJS, Prisma, PostgreSQL, Supabase</p>
+                  <p class="index__links"><a class="link" href="https://fadis-web-74fg.vercel.app" target="_blank" rel="noopener">Voir le site</a> <a class="link" href="#competences" data-show="fadis">Suivre son chemin sur la carte</a></p>
+                </div>
+                <div class="index__phones"><figure class="index__phone"><div class="shot shot--phone" data-slot="ph-fadis-listings-phone" data-kind="product"><img src="images/work/fadis-listings-phone.webp" width="780" height="1688" alt="Les biens du moment sur Fadi’s Immobilier, sur téléphone" loading="lazy"></div><figcaption>Les biens du moment</figcaption></figure></div>
               </div>
             </details>
           </li>
@@ -82,9 +88,12 @@
                 <figure class="shot shot--thumb" data-slot="idx-order" data-kind="product"><img src="images/work/order-kitchen-thumb.webp" width="800" height="500" alt="Écran cuisine de Fadi’s Order, commandes par colonne" loading="lazy"></figure>
               </summary>
               <div class="index__more">
-                <p>Menu digital ouvert par QR code, commandes, écran cuisine en temps réel, personnel, caisse, fidélité et réservations. Un même compte gère plusieurs établissements, chacun isolé.</p>
-                <p class="index__stack">Next.js, NestJS, Prisma, PostgreSQL, Redis, Socket.IO, Turborepo, Docker</p>
-                <p><a class="link" href="https://fadisorder.com" target="_blank" rel="noopener">Voir le site</a></p>
+                <div class="index__text">
+                  <p>Menu digital ouvert par QR code, commandes, écran cuisine en temps réel, personnel, caisse, fidélité et réservations. Un même compte gère plusieurs établissements.</p>
+                  <p class="index__stack">Next.js, NestJS, Prisma, PostgreSQL, Redis, Socket.IO, Turborepo, Docker</p>
+                  <p class="index__links"><a class="link" href="https://fadisorder.com" target="_blank" rel="noopener">Voir le site</a> <a class="link" href="#competences" data-show="order">Suivre son chemin sur la carte</a></p>
+                </div>
+                <div class="index__phones"><figure class="index__phone"><div class="shot shot--phone" data-slot="ph-order-menu-phone" data-kind="product"><img src="images/work/order-menu-phone.webp" width="780" height="1688" alt="Le menu de Fadi’s Order ouvert par QR code" loading="lazy"></div><figcaption>Le menu du client</figcaption></figure><figure class="index__phone"><div class="shot shot--phone" data-slot="ph-order-kitchen-phone" data-kind="product"><img src="images/work/order-kitchen-phone.webp" width="780" height="1688" alt="L’écran cuisine de Fadi’s Order sur téléphone" loading="lazy"></div><figcaption>L’écran cuisine</figcaption></figure></div>
               </div>
             </details>
           </li>
@@ -97,9 +106,12 @@
                 <figure class="shot shot--thumb" data-slot="idx-mali" data-kind="product"><img src="images/work/malidirect-thumb.webp" width="800" height="500" alt="Les abonnements proposés aux commerces sur le portail Mali Direct" loading="lazy"></figure>
               </summary>
               <div class="index__more">
-                <p>Une pharmacie, une mairie, un restaurant ou une boutique, et le chemin pour y aller, demandés en français ou en bambara. Une application, un portail pour les commerces, le SMS et l’USSD. Back-end couvert par 48 tests automatisés.</p>
-                <p class="index__stack">Flutter, Node.js, Express, React, Vite, Firestore, Google Cloud Run</p>
-                <p><a class="link" href="#competences" data-show="mali">Suivre son chemin sur la carte</a></p>
+                <div class="index__text">
+                  <p>Une pharmacie, une mairie, un restaurant ou une boutique, et le chemin pour y aller, demandés en français ou en bambara. Une application, un portail pour les commerces, le SMS et l’USSD. Back-end couvert par 48 tests automatisés.</p>
+                  <p class="index__stack">Flutter, Node.js, Express, React, Vite, Firestore, Google Cloud Run</p>
+                  <p class="index__links"><a class="link" href="#competences" data-show="mali">Suivre son chemin sur la carte</a></p>
+                </div>
+                
               </div>
             </details>
           </li>
@@ -108,13 +120,16 @@
               <summary class="index__link">
                 <h3>A Sara Doni Doni</h3>
                 <p>L’épargne scolaire payée petit à petit par mobile money.</p>
-                <span class="index__meta"><time>2026</time><span>Maquette investisseurs</span><span class="index__toggle" aria-hidden="true"></span></span>
+                <span class="index__meta"><time>2026</time><span>Maquette pour investisseurs</span><span class="index__toggle" aria-hidden="true"></span></span>
                 <figure class="shot shot--thumb" data-slot="idx-asdd" data-kind="product"><img src="images/work/asdd-accueil-thumb.webp" width="800" height="500" alt="Accueil d’A Sara Doni Doni" loading="lazy"></figure>
               </summary>
               <div class="index__more">
-                <p>Épargne scolaire et objectifs d’achat. Rechargement Orange Money, Moov ou Wave (simulé pour la démo), prélèvements quotidiens automatiques, espaces parent, école, vendeur et administrateur, journal d’audit, export CSV.</p>
-                <p class="index__stack">Python, Flask, SQLAlchemy, JWT, Chart.js, Docker</p>
-                <p><a class="link" href="#competences" data-show="asdd">Suivre son chemin sur la carte</a></p>
+                <div class="index__text">
+                  <p>Épargne scolaire et objectifs d’achat. Rechargement Orange Money, Moov Money ou Wave (simulé pour la démo), prélèvements quotidiens automatiques, espaces parent, école, vendeur et administrateur, journal d’audit, export CSV.</p>
+                  <p class="index__stack">Python, Flask, SQLAlchemy, JWT, Chart.js, Docker</p>
+                  <p class="index__links"><a class="link" href="#competences" data-show="asdd">Suivre son chemin sur la carte</a></p>
+                </div>
+                <div class="index__phones"><figure class="index__phone"><div class="shot shot--phone" data-slot="ph-asdd-recharge-phone" data-kind="product"><img src="images/work/asdd-recharge-phone.webp" width="780" height="1688" alt="Rechargement mobile money dans A Sara Doni Doni" loading="lazy"></div><figcaption>Le rechargement</figcaption></figure><figure class="index__phone"><div class="shot shot--phone" data-slot="ph-asdd-parent-phone" data-kind="product"><img src="images/work/asdd-parent-phone.webp" width="780" height="1688" alt="Espace parent d’A Sara Doni Doni" loading="lazy"></div><figcaption>L’espace parent</figcaption></figure></div>
               </div>
             </details>
           </li>
@@ -123,13 +138,16 @@
               <summary class="index__link">
                 <h3>Manden Kalanso</h3>
                 <p>Cours, QCM et certificats pour les élèves maliens.</p>
-                <span class="index__meta"><time>2026</time><span>Contribution</span><span class="index__toggle" aria-hidden="true"></span></span>
+                <span class="index__meta"><time>2026</time><span>En ligne, en équipe</span><span class="index__toggle" aria-hidden="true"></span></span>
                 <figure class="shot shot--thumb" data-slot="idx-kalanso" data-kind="product"><img src="images/work/kalanso-home-thumb.webp" width="800" height="500" alt="Accueil de Manden Kalanso" loading="lazy"></figure>
               </summary>
               <div class="index__more">
-                <p>Une application installable pour le lycée, le supérieur et les filières professionnelles&nbsp;: leçons courtes, QCM corrigés par le serveur, examens et certificats vérifiables. J’ai contribué à ce projet d’équipe.</p>
-                <p class="index__stack">React, Vite, Tailwind CSS, Express, PostgreSQL, Supabase</p>
-                <p><a class="link" href="https://kalanko.com" target="_blank" rel="noopener">Voir le site</a></p>
+                <div class="index__text">
+                  <p>Une application installable pour le lycée, le supérieur et les filières professionnelles&nbsp;: leçons courtes, QCM corrigés par le serveur, examens et certificats vérifiables. J’ai contribué à ce projet d’équipe.</p>
+                  <p class="index__stack">React, Vite, Tailwind CSS, Express, PostgreSQL, Supabase</p>
+                  <p class="index__links"><a class="link" href="https://kalanko.com" target="_blank" rel="noopener">Voir le site</a> <a class="link" href="#competences" data-show="kalanso">Suivre son chemin sur la carte</a></p>
+                </div>
+                <div class="index__phones"><figure class="index__phone"><div class="shot shot--phone" data-slot="ph-kalanso-catalogue-phone" data-kind="product"><img src="images/work/kalanso-catalogue-phone.webp" width="780" height="1688" alt="Le catalogue des cours de Manden Kalanso" loading="lazy"></div><figcaption>Le catalogue</figcaption></figure><figure class="index__phone"><div class="shot shot--phone" data-slot="ph-kalanso-lesson-phone" data-kind="product"><img src="images/work/kalanso-lesson-phone.webp" width="780" height="1688" alt="Une leçon de Manden Kalanso" loading="lazy"></div><figcaption>Une leçon</figcaption></figure></div>
               </div>
             </details>
           </li>
@@ -138,13 +156,16 @@
               <summary class="index__link">
                 <h3>ESGIC Info Hub</h3>
                 <p>Formations, campus et inscription pour mon école.</p>
-                <span class="index__meta"><time>2024</time><span>Site vitrine</span><span class="index__toggle" aria-hidden="true"></span></span>
+                <span class="index__meta"><time>2024</time><span>Terminé</span><span class="index__toggle" aria-hidden="true"></span></span>
                 <figure class="shot shot--thumb" data-slot="idx-esgic" data-kind="product"><img src="images/work/esgic-home-thumb.webp" width="800" height="500" alt="Accueil du site de l’ESGIC" loading="lazy"></figure>
               </summary>
               <div class="index__more">
-                <p>Présentation des formations et de leurs frais, des campus, et un formulaire d’inscription en ligne. Mon premier site en React.</p>
-                <p class="index__stack">React, TypeScript, Tailwind CSS, shadcn/ui</p>
-                <p><a class="link" href="#parcours">Voir le parcours</a></p>
+                <div class="index__text">
+                  <p>Présentation des formations et de leurs frais, des campus, et un formulaire d’inscription en ligne. Mon premier site en React.</p>
+                  <p class="index__stack">React, TypeScript, Tailwind CSS, shadcn/ui</p>
+                  <p class="index__links"><a class="link" href="#competences" data-show="esgic">Suivre son chemin sur la carte</a></p>
+                </div>
+                <div class="index__phones"><figure class="index__phone"><div class="shot shot--phone" data-slot="ph-esgic-home-phone" data-kind="product"><img src="images/work/esgic-home-phone.webp" width="780" height="1688" alt="Site de l’ESGIC sur téléphone" loading="lazy"></div><figcaption>L’accueil</figcaption></figure></div>
               </div>
             </details>
           </li>
@@ -152,171 +173,22 @@
       </div>
     </section>
 
-    <!-- Un projet ouvert : Showcase -->
-    <section class="case" id="fadis" aria-labelledby="case-title">
-      <div class="container">
-        <div class="head head--split">
-          <h2 id="case-title">Fadi’s, ouvert au public en novembre</h2>
-          <p class="lead">Agences vérifiées par leur RCCM, numéro protégé. <a class="link" href="https://fadis-web-74fg.vercel.app" target="_blank" rel="noopener">Ouvrir Fadi’s</a></p>
-        </div>
-        <figure class="case__main">
-          <div class="crop"><div class="shot shot--hero" data-slot="case-main" data-kind="product"><img src="images/work/fadis-home.webp" srcset="images/work/fadis-home-1440.webp 1440w, images/work/fadis-home.webp 2400w" sizes="(min-width: 90rem) 1312px, 100vw" width="2400" height="1500" alt="Page d’accueil de Fadi’s" loading="lazy"></div></div>
-          <figcaption class="redline"><span>Accueil, à 1440 pixels de large</span><span class="num">16:10</span></figcaption>
-        </figure>
-        <div class="case__pair">
-          <figure class="case__fig">
-            <div class="crop"><div class="shot shot--wide" data-slot="case-detail" data-kind="product"><img src="images/work/fadis-annonce.webp" width="1600" height="1000" alt="Fiche d’une annonce sur Fadi’s" loading="lazy"></div></div>
-            <figcaption>Une annonce&nbsp;: galerie, prix, agence vérifiée par son RCCM.</figcaption>
-          </figure>
-          <figure class="case__fig">
-            <div class="crop"><div class="shot shot--crop-phone" data-slot="case-phone" data-kind="product"><img src="images/work/fadis-annonce-phone.webp" width="780" height="1688" alt="Une annonce de Fadi’s sur téléphone" loading="lazy"></div></div>
-            <figcaption>La même annonce, sur téléphone.</figcaption>
-          </figure>
-        </div>
-      </div>
-    </section>
-
-    <!-- Système : Map / Diagram -->
-    <section class="map" id="competences" aria-labelledby="map-title">
-      <div class="container">
-        <div class="head head--split">
-          <h2 id="map-title">Du téléphone jusqu’au paiement</h2>
-          <p class="lead">Choisissez un projet pour suivre son chemin.</p>
-        </div>
-        <div class="seg" role="group" aria-label="Projet affiché">
-          <button type="button" aria-pressed="true" data-project="fadis">Fadi’s</button>
-          <button type="button" aria-pressed="false" data-project="order">Fadi’s Order</button>
-          <button type="button" aria-pressed="false" data-project="mali">Mali Direct</button>
-          <button type="button" aria-pressed="false" data-project="asdd">A Sara Doni Doni</button>
-          <button type="button" aria-pressed="false" data-project="kalanso">Manden Kalanso</button>
-          <button type="button" aria-pressed="false" data-project="esgic">ESGIC</button>
-        </div>
-        <figure class="diagram-wrap">
-          <div class="diagram-scroll" tabindex="0" aria-label="Carte du système">
-            <svg class="diagram" viewBox="0 0 1312 452" role="img" aria-labelledby="map-legend" data-project="all">
-              <g class="cols" aria-hidden="true">
-                <text x="0" y="20">Accès</text><text x="352" y="20">Serveur</text><text x="704" y="20">Données</text><text x="1056" y="20">Paiement</text>
-              </g>
-              <g class="edges" aria-hidden="true">
-                <path data-p="fadis order" d="M256 76 C304 76 304 76 352 76"/>
-                <path data-p="mali kalanso" d="M256 76 C304 76 304 186 352 186"/>
-                <path data-p="asdd" d="M256 76 C304 76 304 296 352 296"/>
-                <path data-p="mali" d="M256 186 C304 186 304 186 352 186"/>
-                <path data-p="mali" d="M256 296 C304 296 304 186 352 186"/>
-                <path data-p="mali" d="M256 406 C304 406 304 186 352 186"/>
-                <path data-p="asdd" d="M256 406 C304 406 304 296 352 296"/>
-                <path data-p="fadis order" d="M608 76 C656 76 656 76 704 76"/>
-                <path data-p="order" d="M608 76 C656 76 656 186 704 186"/>
-                <path data-p="kalanso" d="M608 186 C656 186 656 76 704 76"/>
-                <path data-p="mali" d="M608 186 C656 186 656 296 704 296"/>
-                <path data-p="asdd" d="M608 296 C656 296 656 406 704 406"/>
-                <path data-p="fadis" d="M608 76 C656 76 656 131 704 131 L960 131 C1008 131 1008 76 1056 76"/>
-                <path data-p="fadis" d="M608 76 C656 76 656 131 704 131 L960 131 C1008 131 1008 186 1056 186"/>
-                <path data-p="mali kalanso" d="M608 186 C656 186 656 241 704 241 L960 241 C1008 241 1008 76 1056 76"/>
-                <path data-p="kalanso" d="M608 186 C656 186 656 241 704 241 L960 241 C1008 241 1008 296 1056 296"/>
-                <path data-p="asdd" d="M608 296 C656 296 656 351 704 351 L960 351 C1008 351 1008 76 1056 76"/>
-                <path data-p="asdd" d="M608 296 C656 296 656 351 704 351 L960 351 C1008 351 1008 186 1056 186"/>
-                <path data-p="asdd" d="M608 296 C656 296 656 351 704 351 L960 351 C1008 351 1008 296 1056 296"/>
-              </g>
-              <g class="nodes" aria-hidden="true">
-                <g data-n="fadis order mali asdd kalanso esgic"><rect x="0" y="48" width="256" height="56"/><text x="20" y="82">Navigateur</text></g>
-                <g data-n="mali"><rect x="0" y="158" width="256" height="56"/><text x="20" y="192">Application mobile</text></g>
-                <g data-n="mali"><rect x="0" y="268" width="256" height="56"/><text x="20" y="302">SMS</text></g>
-                <g data-n="mali asdd"><rect x="0" y="378" width="256" height="56"/><text x="20" y="412">USSD</text></g>
-                <g data-n="fadis order"><rect x="352" y="48" width="256" height="56"/><text x="372" y="82">NestJS</text></g>
-                <g data-n="mali kalanso"><rect x="352" y="158" width="256" height="56"/><text x="372" y="192">Node.js et Express</text></g>
-                <g data-n="asdd"><rect x="352" y="268" width="256" height="56"/><text x="372" y="302">Python et Flask</text></g>
-                <g data-n="fadis order kalanso"><rect x="704" y="48" width="256" height="56"/><text x="724" y="82">PostgreSQL</text></g>
-                <g data-n="order"><rect x="704" y="158" width="256" height="56"/><text x="724" y="192">Redis</text></g>
-                <g data-n="mali"><rect x="704" y="268" width="256" height="56"/><text x="724" y="302">Firestore</text></g>
-                <g data-n="asdd"><rect x="704" y="378" width="256" height="56"/><text x="724" y="412">SQLite (démo)</text></g>
-                <g data-n="fadis asdd mali kalanso"><rect x="1056" y="48" width="256" height="56"/><text x="1076" y="82">Orange Money</text></g>
-                <g data-n="fadis asdd"><rect x="1056" y="158" width="256" height="56"/><text x="1076" y="192">Moov Money</text></g>
-                <g data-n="asdd kalanso"><rect x="1056" y="268" width="256" height="56"/><text x="1076" y="302">Wave</text></g>
-              </g>
-            </svg>
-          </div>
-          <ol class="chain" aria-hidden="true">
-            <li><span class="chain__col">Accès</span><span class="chain__val" data-chain="0"></span></li>
-            <li><span class="chain__col">Serveur</span><span class="chain__val" data-chain="1"></span></li>
-            <li><span class="chain__col">Données</span><span class="chain__val" data-chain="2"></span></li>
-            <li><span class="chain__col">Paiement</span><span class="chain__val" data-chain="3"></span></li>
-          </ol>
-          <figcaption id="map-legend" aria-live="polite">
-            <span data-legend="all">Six projets, quatre portes d’entrée, trois serveurs, trois moyens de paiement mobile.</span>
-            <span data-legend="fadis" hidden>Fadi’s&nbsp;: site Next.js, API NestJS avec Prisma, PostgreSQL, paiement Orange Money ou Moov.</span>
-            <span data-legend="order" hidden>Fadi’s Order&nbsp;: site Next.js, API NestJS, PostgreSQL et Redis, cuisine en temps réel par Socket.IO.</span>
-            <span data-legend="mali" hidden>Mali Direct&nbsp;: application Flutter, portail React, SMS et USSD, requêtes en français ou en bambara, API Express sur Cloud Run, Firestore, Orange Money.</span>
-            <span data-legend="asdd" hidden>A Sara Doni Doni&nbsp;: pages Flask et parcours USSD *144#, SQLite pour la démo, Orange Money, Moov et Wave simulés.</span>
-            <span data-legend="kalanso" hidden>Manden Kalanso&nbsp;: application React installable, API Express, PostgreSQL sur Supabase, paiement en ligne par Wave ou Orange Money.</span>
-            <span data-legend="esgic" hidden>ESGIC Info Hub&nbsp;: un site React et TypeScript statique, sans serveur ni paiement.</span>
-          </figcaption>
-        </figure>
-      </div>
-    </section>
-
-    <!-- Sur téléphone : Rail -->
-    <section class="phones" id="mobile" aria-labelledby="phones-title">
-      <div class="container phones__head">
-        <div class="head">
-          <h2 id="phones-title">Huit écrans de téléphone, sans retouche</h2>
-        </div>
-        <div class="rail__nav">
-          <button class="btn" type="button" data-rail="-1" aria-controls="rail">Précédent</button>
-          <button class="btn" type="button" data-rail="1" aria-controls="rail">Suivant</button>
-        </div>
-      </div>
-      <ul class="rail" id="rail" tabindex="0" aria-label="Écrans sur téléphone">
-        <li><figure><div class="shot shot--phone" data-slot="ph-order-menu-phone" data-kind="product"><img src="images/work/order-menu-phone.webp" width="780" height="1688" alt="Le menu de Fadi’s Order, ouvert par QR code" loading="lazy"></div><figcaption>Fadi’s Order, le menu du client</figcaption></figure></li>
-        <li><figure><div class="shot shot--phone" data-slot="ph-order-kitchen-phone" data-kind="product"><img src="images/work/order-kitchen-phone.webp" width="780" height="1688" alt="L’écran cuisine de Fadi’s Order sur téléphone" loading="lazy"></div><figcaption>Fadi’s Order, l’écran cuisine</figcaption></figure></li>
-        <li><figure><div class="shot shot--phone" data-slot="ph-asdd-recharge-phone" data-kind="product"><img src="images/work/asdd-recharge-phone.webp" width="780" height="1688" alt="Rechargement mobile money dans A Sara Doni Doni" loading="lazy"></div><figcaption>A Sara Doni Doni, le rechargement</figcaption></figure></li>
-        <li><figure><div class="shot shot--phone" data-slot="ph-kalanso-catalogue-phone" data-kind="product"><img src="images/work/kalanso-catalogue-phone.webp" width="780" height="1688" alt="Le catalogue des cours de Manden Kalanso" loading="lazy"></div><figcaption>Manden Kalanso, le catalogue</figcaption></figure></li>
-        <li><figure><div class="shot shot--phone" data-slot="ph-fadis-listings-phone" data-kind="product"><img src="images/work/fadis-listings-phone.webp" width="780" height="1688" alt="Les biens du moment sur Fadi’s" loading="lazy"></div><figcaption>Fadi’s, les biens du moment</figcaption></figure></li>
-        <li><figure><div class="shot shot--phone" data-slot="ph-asdd-parent-phone" data-kind="product"><img src="images/work/asdd-parent-phone.webp" width="780" height="1688" alt="Espace parent d’A Sara Doni Doni" loading="lazy"></div><figcaption>A Sara Doni Doni, l’espace parent</figcaption></figure></li>
-        <li><figure><div class="shot shot--phone" data-slot="ph-kalanso-lesson-phone" data-kind="product"><img src="images/work/kalanso-lesson-phone.webp" width="780" height="1688" alt="Une leçon de Manden Kalanso" loading="lazy"></div><figcaption>Manden Kalanso, une leçon</figcaption></figure></li>
-        <li><figure><div class="shot shot--phone" data-slot="ph-esgic-home-phone" data-kind="product"><img src="images/work/esgic-home-phone.webp" width="780" height="1688" alt="Site de l’ESGIC sur téléphone" loading="lazy"></div><figcaption>ESGIC Info Hub, l’accueil</figcaption></figure></li>
-      </ul>
-    </section>
-
-    <!-- Parcours : Rows -->
-    <section class="path" id="parcours" aria-labelledby="path-title">
-      <div class="container path__grid">
-        <div class="head">
-          <h2 id="path-title">De l’ESGIC à la production</h2>
-          <p class="lead">Basé à Bamako.</p>
-        </div>
-        <ol class="rows" role="list">
-          <li><span class="rows__when">Formation</span><span class="rows__what">Informatique de Gestion à l’ESGIC</span></li>
-          <li><time class="rows__when">2024</time><span class="rows__what">ESGIC Info Hub, premier site en React</span></li>
-          <li><time class="rows__when" datetime="2026-06">Juin 2026</time><span class="rows__what">Début de Fadi’s<small>Du design à l’API.</small></span></li>
-          <li><time class="rows__when" datetime="2026-07">Juillet 2026</time><span class="rows__what">Lancement de Fadi’s Order<small>Commandes, cuisine en temps réel, caisse.</small></span></li>
-          <li><time class="rows__when" datetime="2026-08">Août 2026</time><span class="rows__what">Mali Direct et A Sara Doni Doni<small>Un annuaire vocal, une maquette pour investisseurs.</small></span></li>
-          <li><time class="rows__when" datetime="2026-10">Octobre 2026</time><span class="rows__what">Contribution à Manden Kalanso</span></li>
-          <li><time class="rows__when" datetime="2026-11">Novembre 2026</time><span class="rows__what">Fadi’s ouvert au public<small>Sauvegardes, contrôles quotidiens, déploiement automatique.</small></span></li>
-        </ol>
-      </div>
-    </section>
-
-    <!-- Demande de service : Form -->
+    <!-- Devis : Form -->
     <section class="ask" id="demande" aria-labelledby="ask-title">
       <div class="container ask__grid">
         <div class="head ask__head">
-          <h2 id="ask-title">Demander un service</h2>
+          <h2 id="ask-title">Demander un devis</h2>
           <p class="lead">Décrivez votre besoin. La demande part déjà rédigée, par e-mail ou par WhatsApp.</p>
-          <ul class="ask__types" role="list">
-            <li><b>Particulier</b><span>Un projet personnel, un site, une idée à lancer.</span></li>
-            <li><b>PME</b><span>Vendre en ligne, encaisser par mobile money, suivre son activité.</span></li>
-            <li><b>Entreprise</b><span>Une plateforme sur mesure, avec devis et facture à son nom.</span></li>
-          </ul>
+          <p class="ask__direct">Vous préférez écrire vous-même&nbsp;? <a class="link" href="#contact">Voir les coordonnées</a></p>
         </div>
 
         <form class="ask__form" id="ask-form" action="mailto:abdrahamanealy2.0@gmail.com" method="post" enctype="text/plain" novalidate>
           <fieldset class="choice">
             <legend>Vous êtes</legend>
             <div class="choice__row">
-              <input type="radio" name="type" id="t-part" value="Particulier" checked><label for="t-part">Particulier</label>
-              <input type="radio" name="type" id="t-pme" value="PME"><label for="t-pme">PME</label>
-              <input type="radio" name="type" id="t-ent" value="Entreprise"><label for="t-ent">Entreprise</label>
+              <input type="radio" name="type" id="t-part" value="Particulier" checked><label for="t-part"><b>Particulier</b><span>Un projet personnel, un site, une idée à lancer.</span></label>
+              <input type="radio" name="type" id="t-pme" value="PME"><label for="t-pme"><b>PME</b><span>Vendre en ligne, encaisser par mobile money.</span></label>
+              <input type="radio" name="type" id="t-ent" value="Entreprise"><label for="t-ent"><b>Entreprise</b><span>Une plateforme sur mesure, devis et facture à son nom.</span></label>
             </div>
           </fieldset>
 
@@ -324,39 +196,42 @@
             <div class="field field--wide" data-only="org">
               <label for="f-org">Nom de la structure</label>
               <input id="f-org" name="structure" type="text" autocomplete="organization">
+              <p class="field__err" id="err-f-org" hidden></p>
             </div>
             <div class="field">
               <label for="f-name">Nom et prénom</label>
               <input id="f-name" name="nom" type="text" autocomplete="name" required>
+              <p class="field__err" id="err-f-name" hidden></p>
             </div>
             <div class="field" data-only="Entreprise">
               <label for="f-role">Votre fonction</label>
               <input id="f-role" name="fonction" type="text" autocomplete="organization-title">
+              <p class="field__err" id="err-f-role" hidden></p>
             </div>
             <div class="field" data-only="org">
               <label for="f-sector">Secteur d’activité</label>
               <input id="f-sector" name="secteur" type="text">
+              <p class="field__err" id="err-f-sector" hidden></p>
             </div>
             <div class="field" data-only="PME">
               <label for="f-size">Nombre d’employés</label>
-              <select id="f-size" name="employes">
-                <option value="">Choisir</option>
-                <option>1 à 10</option>
-                <option>11 à 50</option>
-                <option>51 à 250</option>
-              </select>
+              <select id="f-size" name="employes"><option value="">Choisir</option><option>1 à 10</option><option>11 à 50</option><option>51 à 250</option></select>
+              <p class="field__err" id="err-f-size" hidden></p>
             </div>
             <div class="field" data-only="Entreprise">
               <label for="f-rccm">RCCM ou NIF <span class="opt">(facultatif, pour la facture)</span></label>
               <input id="f-rccm" name="rccm_nif" type="text">
+              <p class="field__err" id="err-f-rccm" hidden></p>
             </div>
             <div class="field">
               <label for="f-phone">Téléphone ou WhatsApp</label>
               <input id="f-phone" name="telephone" type="tel" autocomplete="tel" inputmode="tel" placeholder="+223" required>
+              <p class="field__err" id="err-f-phone" hidden></p>
             </div>
             <div class="field">
               <label for="f-email">E-mail <span class="opt" data-email-opt>(facultatif)</span></label>
               <input id="f-email" name="email" type="email" autocomplete="email">
+              <p class="field__err" id="err-f-email" hidden></p>
             </div>
           </div>
 
@@ -375,20 +250,18 @@
           <div class="fields">
             <div class="field">
               <label for="f-when">Délai souhaité</label>
-              <select id="f-when" name="delai">
-                <option>Pas encore fixé</option>
-                <option>Dès que possible</option>
-                <option>Dans le mois</option>
-                <option>D’ici trois mois</option>
-              </select>
+              <select id="f-when" name="delai"><option>Pas encore fixé</option><option>Dès que possible</option><option>Dans le mois</option><option>D’ici trois mois</option></select>
+              <p class="field__err" id="err-f-when" hidden></p>
             </div>
             <div class="field">
               <label for="f-budget">Budget estimé <span class="opt">(facultatif, en FCFA)</span></label>
               <input id="f-budget" name="budget" type="text" inputmode="numeric">
+              <p class="field__err" id="err-f-budget" hidden></p>
             </div>
             <div class="field field--wide">
               <label for="f-msg">Votre projet</label>
               <textarea id="f-msg" name="projet" rows="5" required></textarea>
+              <p class="field__err" id="err-f-msg" hidden></p>
             </div>
           </div>
 
@@ -401,37 +274,119 @@
       </div>
     </section>
 
-    <!-- Contact -->
-    <section class="contact" id="contact" aria-labelledby="contact-title">
-      <div class="container contact__grid">
-        <div class="head">
-          <h2 id="contact-title">Écrire à Abdrahamane</h2>
-          <p class="lead">Ouvert aux collaborations.</p>
-          <div class="hero__actions">
-            <a class="btn btn--primary" href="mailto:abdrahamanealy2.0@gmail.com">Écrire un e-mail</a>
-            <a class="btn" href="https://wa.me/22370997781" target="_blank" rel="noopener">WhatsApp</a>
-          </div>
+    <!-- Compétences : Map / Diagram -->
+    <section class="map" id="competences" aria-labelledby="map-title">
+      <div class="container">
+        <div class="head head--split">
+          <h2 id="map-title">Du téléphone jusqu’au paiement</h2>
+          <p class="lead">Choisissez un projet pour suivre son chemin.</p>
         </div>
-        <dl class="lines">
-          <div><dt>E-mail</dt><dd><a href="mailto:abdrahamanealy2.0@gmail.com">abdrahamanealy2.0@gmail.com</a></dd></div>
-          <div><dt>Téléphone et WhatsApp</dt><dd><a href="tel:+22370997781">+223 70 99 77 81</a></dd></div>
-          <div><dt>GitHub</dt><dd><a href="https://github.com/DOSSOBABY" target="_blank" rel="noopener">DOSSOBABY</a></dd></div>
-        </dl>
+        <div class="seg" role="group" aria-label="Projet affiché">
+          <button type="button" aria-pressed="true" data-project="fadis">Fadi’s Immobilier</button>
+          <button type="button" aria-pressed="false" data-project="order">Fadi’s Order</button>
+          <button type="button" aria-pressed="false" data-project="mali">Mali Direct</button>
+          <button type="button" aria-pressed="false" data-project="asdd">A Sara Doni Doni</button>
+          <button type="button" aria-pressed="false" data-project="kalanso">Manden Kalanso</button>
+          <button type="button" aria-pressed="false" data-project="esgic">ESGIC Info Hub</button>
+        </div>
+        <figure class="diagram-wrap">
+          <div class="diagram-scroll" aria-label="Carte du système">
+            <svg class="diagram" viewBox="0 0 1312 452" role="img" aria-labelledby="map-legend" data-project="all">
+              <g class="cols" aria-hidden="true">
+                <text x="0" y="20">Accès</text><text x="352" y="20">Serveur</text><text x="704" y="20">Données</text><text x="1056" y="20">Paiement</text>
+              </g>
+              <g class="edges" aria-hidden="true">
+                <path data-p="fadis order" d="M256 76 C304 76 304 76 352 76"/>
+                <path data-p="mali kalanso" d="M256 76 C304 76 304 186 352 186"/>
+                <path data-p="asdd" d="M256 76 C304 76 304 296 352 296"/>
+                <path data-p="mali" d="M256 186 C304 186 304 186 352 186"/>
+                <path data-p="mali" d="M256 296 C304 296 304 186 352 186"/>
+                <path data-p="mali" d="M256 406 C304 406 304 186 352 186"/>
+                <path data-p="asdd" d="M256 406 C304 406 304 296 352 296"/>
+                <path data-p="fadis order" d="M608 76 C656 76 656 76 704 76"/>
+                <path data-p="order" d="M608 76 C656 76 656 186 704 186"/>
+                <path data-p="kalanso" d="M608 186 C656 186 656 76 704 76"/>
+                <path data-p="mali" d="M608 186 C656 186 656 296 704 296"/>
+                <path data-p="asdd" d="M608 296 C656 296 656 406 704 406"/>
+                <path data-p="fadis order" d="M608 76 C656 76 656 131 704 131 L960 131 C1008 131 1008 76 1056 76"/>
+                <path data-p="fadis order" d="M608 76 C656 76 656 131 704 131 L960 131 C1008 131 1008 186 1056 186"/>
+                <path data-p="order" d="M608 76 C656 76 656 131 704 131 L960 131 C1008 131 1008 296 1056 296"/>
+                <path data-p="mali kalanso" d="M608 186 C656 186 656 241 704 241 L960 241 C1008 241 1008 76 1056 76"/>
+                <path data-p="kalanso" d="M608 186 C656 186 656 241 704 241 L960 241 C1008 241 1008 296 1056 296"/>
+                <path data-p="asdd" d="M608 296 C656 296 656 351 704 351 L960 351 C1008 351 1008 76 1056 76"/>
+                <path data-p="asdd" d="M608 296 C656 296 656 351 704 351 L960 351 C1008 351 1008 186 1056 186"/>
+                <path data-p="asdd" d="M608 296 C656 296 656 351 704 351 L960 351 C1008 351 1008 296 1056 296"/>
+              </g>
+              <g class="nodes" aria-hidden="true">
+                <g data-n="fadis order mali asdd kalanso esgic"><rect x="0" y="48" width="256" height="56"/><text x="20" y="82">Navigateur</text></g>
+                <g data-n="mali"><rect x="0" y="158" width="256" height="56"/><text x="20" y="192">Application mobile</text></g>
+                <g data-n="mali"><rect x="0" y="268" width="256" height="56"/><text x="20" y="302">SMS</text></g>
+                <g data-n="mali asdd"><rect x="0" y="378" width="256" height="56"/><text x="20" y="412">USSD</text></g>
+                <g data-n="fadis order"><rect x="352" y="48" width="256" height="56"/><text x="372" y="82">NestJS</text></g>
+                <g data-n="mali kalanso"><rect x="352" y="158" width="256" height="56"/><text x="372" y="192">Node.js et Express</text></g>
+                <g data-n="asdd"><rect x="352" y="268" width="256" height="56"/><text x="372" y="302">Python et Flask</text></g>
+                <g data-n="fadis order kalanso"><rect x="704" y="48" width="256" height="56"/><text x="724" y="82">PostgreSQL</text></g>
+                <g data-n="order"><rect x="704" y="158" width="256" height="56"/><text x="724" y="192">Redis</text></g>
+                <g data-n="mali"><rect x="704" y="268" width="256" height="56"/><text x="724" y="302">Firestore</text></g>
+                <g data-n="asdd"><rect x="704" y="378" width="256" height="56"/><text x="724" y="412">SQLite (démo)</text></g>
+                <g data-n="fadis order asdd mali kalanso"><rect x="1056" y="48" width="256" height="56"/><text x="1076" y="82">Orange Money</text></g>
+                <g data-n="fadis order asdd"><rect x="1056" y="158" width="256" height="56"/><text x="1076" y="192">Moov Money</text></g>
+                <g data-n="order asdd kalanso"><rect x="1056" y="268" width="256" height="56"/><text x="1076" y="302">Wave</text></g>
+              </g>
+            </svg>
+          </div>
+          <ol class="chain" aria-hidden="true">
+            <li><span class="chain__col">Accès</span><span class="chain__val" data-chain="0"></span></li>
+            <li><span class="chain__col">Serveur</span><span class="chain__val" data-chain="1"></span></li>
+            <li><span class="chain__col">Données</span><span class="chain__val" data-chain="2"></span></li>
+            <li><span class="chain__col">Paiement</span><span class="chain__val" data-chain="3"></span></li>
+          </ol>
+          <figcaption id="map-legend" aria-live="polite">
+            <span data-legend="all">Six projets, quatre portes d’entrée, trois serveurs, trois moyens de paiement mobile.</span>
+            <span data-legend="fadis" hidden>Fadi’s Immobilier&nbsp;: site Next.js, API NestJS, PostgreSQL, paiement Orange Money ou Moov Money.</span>
+            <span data-legend="order" hidden>Fadi’s Order&nbsp;: site Next.js, API NestJS, PostgreSQL et Redis, cuisine en temps réel, paiement Orange Money, Moov Money, Wave ou espèces.</span>
+            <span data-legend="mali" hidden>Mali Direct&nbsp;: application Flutter, portail React, SMS et USSD, requêtes en français ou en bambara, API Express sur Cloud Run, Firestore, Orange Money.</span>
+            <span data-legend="asdd" hidden>A Sara Doni Doni&nbsp;: pages Flask et parcours USSD *144#, SQLite pour la démo, Orange Money, Moov Money et Wave simulés.</span>
+            <span data-legend="kalanso" hidden>Manden Kalanso&nbsp;: application React installable, API Express, PostgreSQL sur Supabase, paiement en ligne par Wave ou Orange Money.</span>
+            <span data-legend="esgic" hidden>ESGIC Info Hub&nbsp;: un site React et TypeScript statique, sans serveur ni paiement.</span>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Parcours : Rows -->
+    <section class="path" id="parcours" aria-labelledby="path-title">
+      <div class="container path__grid">
+        <div class="head">
+          <h2 id="path-title">De l’ESGIC à la production</h2>
+        </div>
+        <ol class="rows" role="list">
+          <li><span class="rows__when">Formation</span><span class="rows__what">Informatique de gestion à l’ESGIC</span></li>
+          <li><time class="rows__when">2024</time><span class="rows__what">ESGIC Info Hub, premier site en React</span></li>
+          <li><span class="rows__when">Juin à août 2026</span><span class="rows__what">Quatre projets lancés<small>Fadi’s Immobilier, Fadi’s Order, Mali Direct, A Sara Doni Doni.</small></span></li>
+          <li><span class="rows__when">Octobre et novembre 2026</span><span class="rows__what">Fadi’s Immobilier ouvert au public<small>Et une contribution à Manden Kalanso.</small></span></li>
+        </ol>
       </div>
     </section>
   </main>
 
-  <footer class="foot proof">
+  <footer class="foot proof" id="contact" aria-labelledby="contact-title">
     <div class="container">
-      <p class="foot__line">Construit et mis en ligne depuis&nbsp;Bamako.</p>
-      <ul class="foot__links" role="list">
-        <li><a href="https://fadis-web-74fg.vercel.app" target="_blank" rel="noopener">Fadi’s</a></li>
-        <li><a href="https://fadisorder.com" target="_blank" rel="noopener">Fadi’s Order</a></li>
-        <li><a href="https://kalanko.com" target="_blank" rel="noopener">Manden Kalanso</a></li>
-        <li><a href="https://github.com/DOSSOBABY" target="_blank" rel="noopener">GitHub</a></li>
-        <li><a href="#top">Haut de page</a></li>
-      </ul>
-      <p class="foot__legal">© <span id="year">2026</span> Abdrahamane Aly TRAORE. Captures prises sur les projets eux-mêmes, lancés en local&nbsp;: annonces, commandes et chiffres sont des données de démonstration.</p>
+      <h2 class="foot__line" id="contact-title">Écrire à Abdrahamane</h2>
+      <div class="foot__grid">
+        <dl class="lines">
+          <div><dt>E-mail</dt><dd><a href="mailto:abdrahamanealy2.0@gmail.com">abdrahamanealy2.0@gmail.com</a></dd></div>
+          <div><dt>Téléphone et WhatsApp</dt><dd><a href="tel:+22370997781">+223 70 99 77 81</a> <a class="lines__wa" href="https://wa.me/22370997781" target="_blank" rel="noopener">Écrire sur WhatsApp</a></dd></div>
+          <div><dt>GitHub</dt><dd><a href="https://github.com/DOSSOBABY" target="_blank" rel="noopener">DOSSOBABY</a></dd></div>
+        </dl>
+        <ul class="foot__links" role="list">
+          <li><a href="https://fadis-web-74fg.vercel.app" target="_blank" rel="noopener">Fadi’s Immobilier</a></li>
+          <li><a href="https://fadisorder.com" target="_blank" rel="noopener">Fadi’s Order</a></li>
+          <li><a href="https://kalanko.com" target="_blank" rel="noopener">Manden Kalanso</a></li>
+          <li><a href="#top">Haut de page</a></li>
+        </ul>
+      </div>
+      <p class="foot__legal">© <span id="year">2026</span> Abdrahamane Aly TRAORE, Bamako. Captures prises sur les projets eux-mêmes, lancés en local&nbsp;: annonces, commandes et chiffres sont des données de démonstration.</p>
     </div>
   </footer>
 
