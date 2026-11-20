@@ -26,6 +26,7 @@
         <a href="#projets">Travaux</a>
         <a href="#competences">Système</a>
         <a href="#parcours">Parcours</a>
+        <a href="#demande">Demande</a>
         <a href="#contact">Contact</a>
       </nav>
       <a class="wordmark" href="#top">Abdrahamane Aly TRAORE</a>
@@ -293,6 +294,110 @@
           <li><time class="rows__when" datetime="2026-10">Octobre 2026</time><span class="rows__what">Contribution à Manden Kalanso</span></li>
           <li><time class="rows__when" datetime="2026-11">Novembre 2026</time><span class="rows__what">Fadi’s ouvert au public<small>Sauvegardes, contrôles quotidiens, déploiement automatique.</small></span></li>
         </ol>
+      </div>
+    </section>
+
+    <!-- Demande de service : Form -->
+    <section class="ask" id="demande" aria-labelledby="ask-title">
+      <div class="container ask__grid">
+        <div class="head ask__head">
+          <h2 id="ask-title">Demander un service</h2>
+          <p class="lead">Décrivez votre besoin. La demande part déjà rédigée, par e-mail ou par WhatsApp.</p>
+          <ul class="ask__types" role="list">
+            <li><b>Particulier</b><span>Un projet personnel, un site, une idée à lancer.</span></li>
+            <li><b>PME</b><span>Vendre en ligne, encaisser par mobile money, suivre son activité.</span></li>
+            <li><b>Entreprise</b><span>Une plateforme sur mesure, avec devis et facture à son nom.</span></li>
+          </ul>
+        </div>
+
+        <form class="ask__form" id="ask-form" action="mailto:abdrahamanealy2.0@gmail.com" method="post" enctype="text/plain" novalidate>
+          <fieldset class="choice">
+            <legend>Vous êtes</legend>
+            <div class="choice__row">
+              <input type="radio" name="type" id="t-part" value="Particulier" checked><label for="t-part">Particulier</label>
+              <input type="radio" name="type" id="t-pme" value="PME"><label for="t-pme">PME</label>
+              <input type="radio" name="type" id="t-ent" value="Entreprise"><label for="t-ent">Entreprise</label>
+            </div>
+          </fieldset>
+
+          <div class="fields">
+            <div class="field field--wide" data-only="org">
+              <label for="f-org">Nom de la structure</label>
+              <input id="f-org" name="structure" type="text" autocomplete="organization">
+            </div>
+            <div class="field">
+              <label for="f-name">Nom et prénom</label>
+              <input id="f-name" name="nom" type="text" autocomplete="name" required>
+            </div>
+            <div class="field" data-only="Entreprise">
+              <label for="f-role">Votre fonction</label>
+              <input id="f-role" name="fonction" type="text" autocomplete="organization-title">
+            </div>
+            <div class="field" data-only="org">
+              <label for="f-sector">Secteur d’activité</label>
+              <input id="f-sector" name="secteur" type="text">
+            </div>
+            <div class="field" data-only="PME">
+              <label for="f-size">Nombre d’employés</label>
+              <select id="f-size" name="employes">
+                <option value="">Choisir</option>
+                <option>1 à 10</option>
+                <option>11 à 50</option>
+                <option>51 à 250</option>
+              </select>
+            </div>
+            <div class="field" data-only="Entreprise">
+              <label for="f-rccm">RCCM ou NIF <span class="opt">(facultatif, pour la facture)</span></label>
+              <input id="f-rccm" name="rccm_nif" type="text">
+            </div>
+            <div class="field">
+              <label for="f-phone">Téléphone ou WhatsApp</label>
+              <input id="f-phone" name="telephone" type="tel" autocomplete="tel" inputmode="tel" placeholder="+223" required>
+            </div>
+            <div class="field">
+              <label for="f-email">E-mail <span class="opt" data-email-opt>(facultatif)</span></label>
+              <input id="f-email" name="email" type="email" autocomplete="email">
+            </div>
+          </div>
+
+          <fieldset class="checks">
+            <legend>Ce dont vous avez besoin</legend>
+            <div class="checks__grid">
+              <label><input type="checkbox" name="services" value="Site web"> Site web</label>
+              <label><input type="checkbox" name="services" value="Plateforme ou application web"> Plateforme ou application web</label>
+              <label><input type="checkbox" name="services" value="Application mobile"> Application mobile</label>
+              <label><input type="checkbox" name="services" value="Paiement mobile money"> Paiement mobile money</label>
+              <label><input type="checkbox" name="services" value="SMS ou USSD"> SMS ou USSD</label>
+              <label><input type="checkbox" name="services" value="Reprise d’un projet existant"> Reprise d’un projet existant</label>
+            </div>
+          </fieldset>
+
+          <div class="fields">
+            <div class="field">
+              <label for="f-when">Délai souhaité</label>
+              <select id="f-when" name="delai">
+                <option>Pas encore fixé</option>
+                <option>Dès que possible</option>
+                <option>Dans le mois</option>
+                <option>D’ici trois mois</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="f-budget">Budget estimé <span class="opt">(facultatif, en FCFA)</span></label>
+              <input id="f-budget" name="budget" type="text" inputmode="numeric">
+            </div>
+            <div class="field field--wide">
+              <label for="f-msg">Votre projet</label>
+              <textarea id="f-msg" name="projet" rows="5" required></textarea>
+            </div>
+          </div>
+
+          <div class="ask__actions">
+            <button class="btn btn--primary" type="submit" name="via" value="email">Envoyer par e-mail</button>
+            <button class="btn" type="submit" name="via" value="whatsapp">Envoyer par WhatsApp</button>
+          </div>
+          <p class="ask__help" id="ask-help" aria-live="polite"></p>
+        </form>
       </div>
     </section>
 
