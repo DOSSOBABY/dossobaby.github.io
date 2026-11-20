@@ -38,9 +38,9 @@
     <section class="hero proof" id="apropos" aria-labelledby="hero-title">
       <div class="container hero__grid">
         <h1 id="hero-title" class="guided">Des plateformes faites pour le&nbsp;Mali.</h1>
-        <div class="guides__read" aria-hidden="true"><span>Capitales 700</span><span>Hauteur d’x 520</span><span>Ligne de base 0</span></div>
+        <div class="guides__read" aria-hidden="true"><span>Capitales 700</span><span>Ligne de base 0</span></div>
         <div class="hero__side">
-          <p class="lead">Développeur full-stack à Bamako, formé en informatique de gestion à l’ESGIC.</p>
+          <p class="lead">Full-stack à Bamako&nbsp;: web, mobile, USSD et mobile money.</p>
           <div class="hero__actions">
             <a class="btn btn--primary" href="mailto:abdrahamanealy2.0@gmail.com">Écrire un e-mail</a>
             <a class="btn" href="https://wa.me/22370997781" target="_blank" rel="noopener">WhatsApp</a>
@@ -49,61 +49,103 @@
       </div>
     </section>
 
-    <!-- Travaux : Index -->
+    <!-- Travaux : Index qui s'ouvre -->
     <section class="work" id="projets" aria-labelledby="work-title">
       <div class="container">
         <div class="head head--split">
-          <h2 id="work-title">Six projets, tous pour le&nbsp;Mali</h2>
-          <p class="lead">Trois sont en ligne aujourd’hui.</p>
+          <h2 id="work-title">De l’annonce immobilière à l’épargne scolaire</h2>
+          <p class="lead">Six projets, trois en ligne. Ouvrez une ligne pour le détail.</p>
         </div>
         <ol class="index" role="list">
-          <li class="index__row index__row--lead">
-            <a class="index__link" href="#fadis">
-              <h3>Fadi’s</h3>
-              <p>L’immobilier vérifié à Bamako&nbsp;: annonces modérées, agences contrôlées.</p>
-              <span class="index__meta"><time>2026</time><span>En ligne</span></span>
-              <figure class="shot shot--thumb" data-slot="idx-fadis" data-kind="product"><img src="images/work/fadis-home-thumb.webp" width="800" height="500" alt="Accueil de Fadi’s" loading="lazy"></figure>
-            </a>
+          <li class="index__row index__row--lead" id="projet-fadis">
+            <details>
+              <summary class="index__link">
+                <h3>Fadi’s</h3>
+                <p>L’immobilier vérifié à Bamako&nbsp;: annonces modérées, agences contrôlées.</p>
+                <span class="index__meta"><time>2026</time><span>En ligne</span><span class="index__toggle" aria-hidden="true"></span></span>
+                <figure class="shot shot--thumb" data-slot="idx-fadis" data-kind="product"><img src="images/work/fadis-listings-thumb.webp" width="800" height="500" alt="Les biens du moment sur Fadi’s" loading="lazy"></figure>
+              </summary>
+              <div class="index__more">
+                <p>Maisons, villas et terrains à vendre ou à louer. Agences vérifiées par leur RCCM, messagerie qui protège le numéro, simulateur de crédit, vente à terme, devis de constructeurs, services payants par Orange Money ou Moov.</p>
+                <p class="index__stack">Next.js, NestJS, Prisma, PostgreSQL, Socket.IO, Supabase, Vercel, Render, GitHub Actions</p>
+                <p><a class="link" href="https://fadis-web-74fg.vercel.app" target="_blank" rel="noopener">Voir le site</a> ou <a class="link" href="#fadis">l’étude de cas</a></p>
+              </div>
+            </details>
           </li>
-          <li class="index__row">
-            <a class="index__link" href="https://fadisorder.com" target="_blank" rel="noopener">
-              <h3>Fadi’s Order</h3>
-              <p>Menu, commandes, cuisine et caisse pour les restaurants.</p>
-              <span class="index__meta"><time>2026</time><span>En ligne</span></span>
-              <figure class="shot shot--thumb" data-slot="idx-order" data-kind="product"><img src="images/work/order-kitchen-thumb.webp" width="800" height="500" alt="Écran cuisine de Fadi’s Order, commandes par colonne" loading="lazy"></figure>
-            </a>
+          <li class="index__row" id="projet-order">
+            <details>
+              <summary class="index__link">
+                <h3>Fadi’s Order</h3>
+                <p>Menu, commandes, cuisine et caisse pour les restaurants.</p>
+                <span class="index__meta"><time>2026</time><span>En ligne</span><span class="index__toggle" aria-hidden="true"></span></span>
+                <figure class="shot shot--thumb" data-slot="idx-order" data-kind="product"><img src="images/work/order-kitchen-thumb.webp" width="800" height="500" alt="Écran cuisine de Fadi’s Order, commandes par colonne" loading="lazy"></figure>
+              </summary>
+              <div class="index__more">
+                <p>Menu digital ouvert par QR code, commandes, écran cuisine en temps réel, personnel, caisse, fidélité et réservations. Un même compte gère plusieurs établissements, chacun isolé.</p>
+                <p class="index__stack">Next.js, NestJS, Prisma, PostgreSQL, Redis, Socket.IO, Turborepo, Docker</p>
+                <p><a class="link" href="https://fadisorder.com" target="_blank" rel="noopener">Voir le site</a></p>
+              </div>
+            </details>
           </li>
-          <li class="index__row">
-            <a class="index__link" href="#competences">
-              <h3>Mali Direct</h3>
-              <p>Trouver un lieu et son itinéraire, par appli, SMS ou USSD.</p>
-              <span class="index__meta"><time>2026</time><span>Prototype</span></span>
-              <figure class="shot shot--thumb" data-slot="idx-mali" data-kind="product"><img src="images/work/malidirect-thumb.webp" width="800" height="500" alt="Les abonnements proposés aux commerces sur le portail Mali Direct" loading="lazy"></figure>
-            </a>
+          <li class="index__row" id="projet-mali">
+            <details>
+              <summary class="index__link">
+                <h3>Mali Direct</h3>
+                <p>Trouver un lieu et son itinéraire, par appli, SMS ou USSD.</p>
+                <span class="index__meta"><time>2026</time><span>Prototype</span><span class="index__toggle" aria-hidden="true"></span></span>
+                <figure class="shot shot--thumb" data-slot="idx-mali" data-kind="product"><img src="images/work/malidirect-thumb.webp" width="800" height="500" alt="Les abonnements proposés aux commerces sur le portail Mali Direct" loading="lazy"></figure>
+              </summary>
+              <div class="index__more">
+                <p>Une pharmacie, une mairie, un restaurant ou une boutique, et le chemin pour y aller, demandés en français ou en bambara. Une application, un portail pour les commerces, le SMS et l’USSD. Back-end couvert par 48 tests automatisés.</p>
+                <p class="index__stack">Flutter, Node.js, Express, React, Vite, Firestore, Google Cloud Run</p>
+                <p><a class="link" href="#competences" data-show="mali">Suivre son chemin sur la carte</a></p>
+              </div>
+            </details>
           </li>
-          <li class="index__row">
-            <a class="index__link" href="#mobile">
-              <h3>A Sara Doni Doni</h3>
-              <p>L’épargne scolaire payée petit à petit par mobile money.</p>
-              <span class="index__meta"><time>2026</time><span>Maquette investisseurs</span></span>
-              <figure class="shot shot--thumb" data-slot="idx-asdd" data-kind="product"><img src="images/work/asdd-accueil-thumb.webp" width="800" height="500" alt="Accueil d’A Sara Doni Doni" loading="lazy"></figure>
-            </a>
+          <li class="index__row" id="projet-asdd">
+            <details>
+              <summary class="index__link">
+                <h3>A Sara Doni Doni</h3>
+                <p>L’épargne scolaire payée petit à petit par mobile money.</p>
+                <span class="index__meta"><time>2026</time><span>Maquette investisseurs</span><span class="index__toggle" aria-hidden="true"></span></span>
+                <figure class="shot shot--thumb" data-slot="idx-asdd" data-kind="product"><img src="images/work/asdd-accueil-thumb.webp" width="800" height="500" alt="Accueil d’A Sara Doni Doni" loading="lazy"></figure>
+              </summary>
+              <div class="index__more">
+                <p>Épargne scolaire et objectifs d’achat. Rechargement Orange Money, Moov ou Wave (simulé pour la démo), prélèvements quotidiens automatiques, espaces parent, école, vendeur et administrateur, journal d’audit, export CSV.</p>
+                <p class="index__stack">Python, Flask, SQLAlchemy, JWT, Chart.js, Docker</p>
+                <p><a class="link" href="#competences" data-show="asdd">Suivre son chemin sur la carte</a></p>
+              </div>
+            </details>
           </li>
-          <li class="index__row">
-            <a class="index__link" href="https://kalanko.com" target="_blank" rel="noopener">
-              <h3>Manden Kalanso</h3>
-              <p>Cours, QCM et certificats pour les élèves maliens.</p>
-              <span class="index__meta"><time>2026</time><span>Contribution</span></span>
-              <figure class="shot shot--thumb" data-slot="idx-kalanso" data-kind="product"><img src="images/work/kalanso-home-thumb.webp" width="800" height="500" alt="Accueil de Manden Kalanso" loading="lazy"></figure>
-            </a>
+          <li class="index__row" id="projet-kalanso">
+            <details>
+              <summary class="index__link">
+                <h3>Manden Kalanso</h3>
+                <p>Cours, QCM et certificats pour les élèves maliens.</p>
+                <span class="index__meta"><time>2026</time><span>Contribution</span><span class="index__toggle" aria-hidden="true"></span></span>
+                <figure class="shot shot--thumb" data-slot="idx-kalanso" data-kind="product"><img src="images/work/kalanso-home-thumb.webp" width="800" height="500" alt="Accueil de Manden Kalanso" loading="lazy"></figure>
+              </summary>
+              <div class="index__more">
+                <p>Une application installable pour le lycée, le supérieur et les filières professionnelles&nbsp;: leçons courtes, QCM corrigés par le serveur, examens et certificats vérifiables. J’ai contribué à ce projet d’équipe.</p>
+                <p class="index__stack">React, Vite, Tailwind CSS, Express, PostgreSQL, Supabase</p>
+                <p><a class="link" href="https://kalanko.com" target="_blank" rel="noopener">Voir le site</a></p>
+              </div>
+            </details>
           </li>
-          <li class="index__row">
-            <a class="index__link" href="#parcours">
-              <h3>ESGIC Info Hub</h3>
-              <p>Formations, campus et inscription pour mon école.</p>
-              <span class="index__meta"><time>2024</time><span>Site vitrine</span></span>
-              <figure class="shot shot--thumb" data-slot="idx-esgic" data-kind="product"><img src="images/work/esgic-home-thumb.webp" width="800" height="500" alt="Accueil du site de l’ESGIC" loading="lazy"></figure>
-            </a>
+          <li class="index__row" id="projet-esgic">
+            <details>
+              <summary class="index__link">
+                <h3>ESGIC Info Hub</h3>
+                <p>Formations, campus et inscription pour mon école.</p>
+                <span class="index__meta"><time>2024</time><span>Site vitrine</span><span class="index__toggle" aria-hidden="true"></span></span>
+                <figure class="shot shot--thumb" data-slot="idx-esgic" data-kind="product"><img src="images/work/esgic-home-thumb.webp" width="800" height="500" alt="Accueil du site de l’ESGIC" loading="lazy"></figure>
+              </summary>
+              <div class="index__more">
+                <p>Présentation des formations et de leurs frais, des campus, et un formulaire d’inscription en ligne. Mon premier site en React.</p>
+                <p class="index__stack">React, TypeScript, Tailwind CSS, shadcn/ui</p>
+                <p><a class="link" href="#parcours">Voir le parcours</a></p>
+              </div>
+            </details>
           </li>
         </ol>
       </div>
@@ -112,9 +154,9 @@
     <!-- Un projet ouvert : Showcase -->
     <section class="case" id="fadis" aria-labelledby="case-title">
       <div class="container">
-        <div class="head">
+        <div class="head head--split">
           <h2 id="case-title">Fadi’s, ouvert au public en novembre</h2>
-          <p class="lead">Agences vérifiées par leur RCCM, numéro protégé, paiement par Orange Money ou Moov.</p>
+          <p class="lead">Agences vérifiées par leur RCCM, numéro protégé. <a class="link" href="https://fadis-web-74fg.vercel.app" target="_blank" rel="noopener">Ouvrir Fadi’s</a></p>
         </div>
         <figure class="case__main">
           <div class="crop"><div class="shot shot--hero" data-slot="case-main" data-kind="product"><img src="images/work/fadis-home.webp" srcset="images/work/fadis-home-1440.webp 1440w, images/work/fadis-home.webp 2400w" sizes="(min-width: 90rem) 1312px, 100vw" width="2400" height="1500" alt="Page d’accueil de Fadi’s" loading="lazy"></div></div>
@@ -130,7 +172,6 @@
             <figcaption>La même annonce, sur téléphone.</figcaption>
           </figure>
         </div>
-        <p class="case__link"><a class="link" href="https://fadis-web-74fg.vercel.app" target="_blank" rel="noopener">Ouvrir Fadi’s</a></p>
       </div>
     </section>
 
@@ -150,37 +191,31 @@
           <button type="button" aria-pressed="false" data-project="esgic">ESGIC</button>
         </div>
         <figure class="diagram-wrap">
-          <div class="diagram-scroll" tabindex="0" aria-label="Carte du système, défilable sur petit écran">
+          <div class="diagram-scroll" tabindex="0" aria-label="Carte du système">
             <svg class="diagram" viewBox="0 0 1312 452" role="img" aria-labelledby="map-legend" data-project="all">
               <g class="cols" aria-hidden="true">
                 <text x="0" y="20">Accès</text><text x="352" y="20">Serveur</text><text x="704" y="20">Données</text><text x="1056" y="20">Paiement</text>
               </g>
               <g class="edges" aria-hidden="true">
-                <!-- accès → serveur -->
-                <path data-p="fadis order kalanso" d="M256 76 C304 76 304 76 352 76"/>
-                <path data-p="mali asdd" d="M256 76 C304 76 304 196 352 196"/>
-                <path data-p="mali" d="M256 76 C304 76 304 196 352 196"/>
-                <path data-p="mali" d="M256 186 C304 186 304 196 352 196"/>
-                <path data-p="mali" d="M256 296 C304 296 304 196 352 196"/>
-                <path data-p="mali" d="M256 406 C304 406 304 196 352 196"/>
-                <path data-p="kalanso" d="M256 76 C304 76 304 196 352 196"/>
-                <path data-p="asdd" d="M256 76 C304 76 304 316 352 316"/>
-                <path data-p="asdd" d="M256 406 C304 406 304 316 352 316"/>
-                <!-- serveur → données -->
+                <path data-p="fadis order" d="M256 76 C304 76 304 76 352 76"/>
+                <path data-p="mali kalanso" d="M256 76 C304 76 304 186 352 186"/>
+                <path data-p="asdd" d="M256 76 C304 76 304 296 352 296"/>
+                <path data-p="mali" d="M256 186 C304 186 304 186 352 186"/>
+                <path data-p="mali" d="M256 296 C304 296 304 186 352 186"/>
+                <path data-p="mali" d="M256 406 C304 406 304 186 352 186"/>
+                <path data-p="asdd" d="M256 406 C304 406 304 296 352 296"/>
                 <path data-p="fadis order" d="M608 76 C656 76 656 76 704 76"/>
                 <path data-p="order" d="M608 76 C656 76 656 186 704 186"/>
-                <path data-p="kalanso" d="M608 196 C656 196 656 76 704 76"/>
-                <path data-p="mali" d="M608 196 C656 196 656 296 704 296"/>
-                <path data-p="asdd" d="M608 316 C656 316 656 406 704 406"/>
-                <!-- serveur → paiement -->
-                <path data-p="fadis" d="M608 76 C832 20 832 76 1056 76"/>
-                <path data-p="fadis" d="M608 76 C832 120 832 186 1056 186"/>
-                <path data-p="asdd" d="M608 316 C832 316 832 76 1056 76"/>
-                <path data-p="asdd" d="M608 316 C832 316 832 186 1056 186"/>
-                <path data-p="asdd" d="M608 316 C832 316 832 296 1056 296"/>
-                <path data-p="mali" d="M608 196 C832 196 832 76 1056 76"/>
-                <path data-p="kalanso" d="M608 196 C832 230 832 296 1056 296"/>
-                <path data-p="kalanso" d="M608 196 C832 170 832 76 1056 76"/>
+                <path data-p="kalanso" d="M608 186 C656 186 656 76 704 76"/>
+                <path data-p="mali" d="M608 186 C656 186 656 296 704 296"/>
+                <path data-p="asdd" d="M608 296 C656 296 656 406 704 406"/>
+                <path data-p="fadis" d="M608 76 C656 76 656 131 704 131 L960 131 C1008 131 1008 76 1056 76"/>
+                <path data-p="fadis" d="M608 76 C656 76 656 131 704 131 L960 131 C1008 131 1008 186 1056 186"/>
+                <path data-p="mali kalanso" d="M608 186 C656 186 656 241 704 241 L960 241 C1008 241 1008 76 1056 76"/>
+                <path data-p="kalanso" d="M608 186 C656 186 656 241 704 241 L960 241 C1008 241 1008 296 1056 296"/>
+                <path data-p="asdd" d="M608 296 C656 296 656 351 704 351 L960 351 C1008 351 1008 76 1056 76"/>
+                <path data-p="asdd" d="M608 296 C656 296 656 351 704 351 L960 351 C1008 351 1008 186 1056 186"/>
+                <path data-p="asdd" d="M608 296 C656 296 656 351 704 351 L960 351 C1008 351 1008 296 1056 296"/>
               </g>
               <g class="nodes" aria-hidden="true">
                 <g data-n="fadis order mali asdd kalanso esgic"><rect x="0" y="48" width="256" height="56"/><text x="20" y="82">Navigateur</text></g>
@@ -188,8 +223,8 @@
                 <g data-n="mali"><rect x="0" y="268" width="256" height="56"/><text x="20" y="302">SMS</text></g>
                 <g data-n="mali asdd"><rect x="0" y="378" width="256" height="56"/><text x="20" y="412">USSD</text></g>
                 <g data-n="fadis order"><rect x="352" y="48" width="256" height="56"/><text x="372" y="82">NestJS</text></g>
-                <g data-n="mali kalanso"><rect x="352" y="168" width="256" height="56"/><text x="372" y="202">Node.js et Express</text></g>
-                <g data-n="asdd"><rect x="352" y="288" width="256" height="56"/><text x="372" y="322">Python et Flask</text></g>
+                <g data-n="mali kalanso"><rect x="352" y="158" width="256" height="56"/><text x="372" y="192">Node.js et Express</text></g>
+                <g data-n="asdd"><rect x="352" y="268" width="256" height="56"/><text x="372" y="302">Python et Flask</text></g>
                 <g data-n="fadis order kalanso"><rect x="704" y="48" width="256" height="56"/><text x="724" y="82">PostgreSQL</text></g>
                 <g data-n="order"><rect x="704" y="158" width="256" height="56"/><text x="724" y="192">Redis</text></g>
                 <g data-n="mali"><rect x="704" y="268" width="256" height="56"/><text x="724" y="302">Firestore</text></g>
@@ -200,14 +235,20 @@
               </g>
             </svg>
           </div>
+          <ol class="chain" aria-hidden="true">
+            <li><span class="chain__col">Accès</span><span class="chain__val" data-chain="0"></span></li>
+            <li><span class="chain__col">Serveur</span><span class="chain__val" data-chain="1"></span></li>
+            <li><span class="chain__col">Données</span><span class="chain__val" data-chain="2"></span></li>
+            <li><span class="chain__col">Paiement</span><span class="chain__val" data-chain="3"></span></li>
+          </ol>
           <figcaption id="map-legend" aria-live="polite">
             <span data-legend="all">Six projets, quatre portes d’entrée, trois serveurs, trois moyens de paiement mobile.</span>
-            <span data-legend="fadis" hidden>Fadi’s&nbsp;: navigateur, API NestJS, PostgreSQL, paiement Orange Money ou Moov.</span>
-            <span data-legend="order" hidden>Fadi’s Order&nbsp;: navigateur, API NestJS, PostgreSQL et Redis, cuisine en temps réel par Socket.IO.</span>
-            <span data-legend="mali" hidden>Mali Direct&nbsp;: application Flutter, portail web, SMS et USSD, API Express sur Cloud Run, Firestore, Orange Money.</span>
-            <span data-legend="asdd" hidden>A Sara Doni Doni&nbsp;: navigateur et USSD *144#, Flask, SQLite pour la démo, Orange Money, Moov et Wave simulés.</span>
-            <span data-legend="kalanso" hidden>Manden Kalanso&nbsp;: application installable, API Express, PostgreSQL, paiement en ligne par Wave ou Orange Money.</span>
-            <span data-legend="esgic" hidden>ESGIC Info Hub&nbsp;: un site React statique, sans serveur ni paiement.</span>
+            <span data-legend="fadis" hidden>Fadi’s&nbsp;: site Next.js, API NestJS avec Prisma, PostgreSQL, paiement Orange Money ou Moov.</span>
+            <span data-legend="order" hidden>Fadi’s Order&nbsp;: site Next.js, API NestJS, PostgreSQL et Redis, cuisine en temps réel par Socket.IO.</span>
+            <span data-legend="mali" hidden>Mali Direct&nbsp;: application Flutter, portail React, SMS et USSD, requêtes en français ou en bambara, API Express sur Cloud Run, Firestore, Orange Money.</span>
+            <span data-legend="asdd" hidden>A Sara Doni Doni&nbsp;: pages Flask et parcours USSD *144#, SQLite pour la démo, Orange Money, Moov et Wave simulés.</span>
+            <span data-legend="kalanso" hidden>Manden Kalanso&nbsp;: application React installable, API Express, PostgreSQL sur Supabase, paiement en ligne par Wave ou Orange Money.</span>
+            <span data-legend="esgic" hidden>ESGIC Info Hub&nbsp;: un site React et TypeScript statique, sans serveur ni paiement.</span>
           </figcaption>
         </figure>
       </div>
@@ -215,12 +256,16 @@
 
     <!-- Sur téléphone : Rail -->
     <section class="phones" id="mobile" aria-labelledby="phones-title">
-      <div class="container">
+      <div class="container phones__head">
         <div class="head">
-          <h2 id="phones-title">Pensés d’abord pour le téléphone</h2>
+          <h2 id="phones-title">Huit écrans de téléphone, sans retouche</h2>
+        </div>
+        <div class="rail__nav">
+          <button class="btn" type="button" data-rail="-1" aria-controls="rail">Précédent</button>
+          <button class="btn" type="button" data-rail="1" aria-controls="rail">Suivant</button>
         </div>
       </div>
-      <ul class="rail" tabindex="0" aria-label="Écrans sur téléphone">
+      <ul class="rail" id="rail" tabindex="0" aria-label="Écrans sur téléphone">
         <li><figure><div class="shot shot--phone" data-slot="ph-order-menu-phone" data-kind="product"><img src="images/work/order-menu-phone.webp" width="780" height="1688" alt="Le menu de Fadi’s Order, ouvert par QR code" loading="lazy"></div><figcaption>Fadi’s Order, le menu du client</figcaption></figure></li>
         <li><figure><div class="shot shot--phone" data-slot="ph-order-kitchen-phone" data-kind="product"><img src="images/work/order-kitchen-phone.webp" width="780" height="1688" alt="L’écran cuisine de Fadi’s Order sur téléphone" loading="lazy"></div><figcaption>Fadi’s Order, l’écran cuisine</figcaption></figure></li>
         <li><figure><div class="shot shot--phone" data-slot="ph-asdd-recharge-phone" data-kind="product"><img src="images/work/asdd-recharge-phone.webp" width="780" height="1688" alt="Rechargement mobile money dans A Sara Doni Doni" loading="lazy"></div><figcaption>A Sara Doni Doni, le rechargement</figcaption></figure></li>
@@ -242,26 +287,29 @@
         <ol class="rows" role="list">
           <li><span class="rows__when">Formation</span><span class="rows__what">Informatique de Gestion à l’ESGIC</span></li>
           <li><time class="rows__when">2024</time><span class="rows__what">ESGIC Info Hub, premier site en React</span></li>
-          <li><time class="rows__when" datetime="2026-06">Juin 2026</time><span class="rows__what">Début de Fadi’s</span></li>
-          <li><time class="rows__when" datetime="2026-07">Juillet 2026</time><span class="rows__what">Lancement de Fadi’s Order</span></li>
-          <li><time class="rows__when" datetime="2026-08">Août 2026</time><span class="rows__what">Mali Direct et A Sara Doni Doni</span></li>
+          <li><time class="rows__when" datetime="2026-06">Juin 2026</time><span class="rows__what">Début de Fadi’s<small>Du design à l’API.</small></span></li>
+          <li><time class="rows__when" datetime="2026-07">Juillet 2026</time><span class="rows__what">Lancement de Fadi’s Order<small>Commandes, cuisine en temps réel, caisse.</small></span></li>
+          <li><time class="rows__when" datetime="2026-08">Août 2026</time><span class="rows__what">Mali Direct et A Sara Doni Doni<small>Un annuaire vocal, une maquette pour investisseurs.</small></span></li>
           <li><time class="rows__when" datetime="2026-10">Octobre 2026</time><span class="rows__what">Contribution à Manden Kalanso</span></li>
-          <li><time class="rows__when" datetime="2026-11">Novembre 2026</time><span class="rows__what">Fadi’s ouvert au public</span></li>
+          <li><time class="rows__when" datetime="2026-11">Novembre 2026</time><span class="rows__what">Fadi’s ouvert au public<small>Sauvegardes, contrôles quotidiens, déploiement automatique.</small></span></li>
         </ol>
       </div>
     </section>
 
-    <!-- Contact : Split de coordonnées -->
+    <!-- Contact -->
     <section class="contact" id="contact" aria-labelledby="contact-title">
       <div class="container contact__grid">
         <div class="head">
-          <h2 id="contact-title">Parlons de votre projet</h2>
-          <p class="lead">Je réponds par e-mail ou sur WhatsApp.</p>
+          <h2 id="contact-title">Écrire à Abdrahamane</h2>
+          <p class="lead">Ouvert aux collaborations.</p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="mailto:abdrahamanealy2.0@gmail.com">Écrire un e-mail</a>
+            <a class="btn" href="https://wa.me/22370997781" target="_blank" rel="noopener">WhatsApp</a>
+          </div>
         </div>
         <dl class="lines">
           <div><dt>E-mail</dt><dd><a href="mailto:abdrahamanealy2.0@gmail.com">abdrahamanealy2.0@gmail.com</a></dd></div>
-          <div><dt>WhatsApp</dt><dd><a href="https://wa.me/22370997781" target="_blank" rel="noopener">+223 70 99 77 81</a></dd></div>
-          <div><dt>Téléphone</dt><dd><a href="tel:+22370997781">+223 70 99 77 81</a></dd></div>
+          <div><dt>Téléphone et WhatsApp</dt><dd><a href="tel:+22370997781">+223 70 99 77 81</a></dd></div>
           <div><dt>GitHub</dt><dd><a href="https://github.com/DOSSOBABY" target="_blank" rel="noopener">DOSSOBABY</a></dd></div>
         </dl>
       </div>
@@ -270,7 +318,7 @@
 
   <footer class="foot proof">
     <div class="container">
-      <p class="foot__line">Construit à Bamako, pour&nbsp;le&nbsp;Mali.</p>
+      <p class="foot__line">Construit et mis en ligne depuis&nbsp;Bamako.</p>
       <ul class="foot__links" role="list">
         <li><a href="https://fadis-web-74fg.vercel.app" target="_blank" rel="noopener">Fadi’s</a></li>
         <li><a href="https://fadisorder.com" target="_blank" rel="noopener">Fadi’s Order</a></li>
