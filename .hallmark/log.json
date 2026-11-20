@@ -1,0 +1,30 @@
+[
+ {
+  "mode": "redesign",
+  "depth": "full",
+  "scope": "page",
+  "shape": "map-diagram",
+  "theme": "studio",
+  "axes": "light/roman-serif/warm",
+  "hero": "banner",
+  "nav": "masthead",
+  "footer": "statement",
+  "imagery": "screenshots",
+  "photos": [],
+  "entry": "index.html",
+  "sections": [
+   "hero",
+   "index",
+   "showcase",
+   "map",
+   "rail",
+   "rows",
+   "contact"
+  ],
+  "signature": "system map tracing each project from the phone to its server, data and mobile money operator",
+  "waived": [],
+  "prompt": "portfolio d un développeur full-stack à Bamako",
+  "draw": "a18d31",
+  "date": "2026-11-20"
+ }
+]

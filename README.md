@@ -8,21 +8,25 @@ Site statique (HTML, CSS, JavaScript), sans dépendance ni étape de build, héb
 
 | Fichier | Rôle |
 | --- | --- |
-| `index.html` | Contenu de toutes les sections |
-| `style.css` | Mise en forme, thème clair/sombre, responsive |
-| `script.js` | Menu mobile, thème, filtre des projets, animations |
-| `favicon.svg` | Icône de l'onglet |
+| `index.html` | Le contenu de la page |
+| `style.css` | La mise en page (thème Studio de Hallmark), précédée de son tampon de vérification |
+| `tokens.css`, `base.css` | Couleurs, polices, espacements et règles de base du thème |
+| `script.js` | La carte du système (choix d'un projet) et l'année du pied de page |
+| `images/work/` | Les captures des projets, en WebP |
+| `.hallmark/` | Le journal de la refonte Hallmark (comparaison avant et après) |
+
+## Les captures
+
+Chaque projet a été lancé en local avec ses propres données de démonstration, puis capturé à 1440 × 900 (ordinateur) et 390 × 844 (téléphone). Les originaux PNG ne sont pas versionnés (`images/screens/` est ignoré) ; seules les versions WebP de `images/work/` sont publiées.
+
+Pour remplacer une capture, garde le même nom de fichier dans `images/work/` et les mêmes proportions (16:10 pour les vignettes et l'écran principal, 390:844 pour les téléphones).
 
 ## Personnaliser
 
-Tout se modifie dans `index.html` :
-
-- **Hero / À propos** : ton prénom, ta phrase d'accroche, ta présentation.
-- **Photo** : ajoute `assets/photo.jpg` et remplace le bloc `<span>DB</span>` par `<img src="assets/photo.jpg" alt="Mon portrait">`.
-- **CV** : dépose ton CV à la racine sous le nom `cv.pdf` et ajoute un lien `<a href="cv.pdf" download>` dans « À propos ».
-- **Projets** : duplique un bloc `<article class="project">`. L'attribut `data-cat` (une ou plusieurs valeurs parmi `live`, `saas`, `mobile`, `fintech`, `edu`) sert au filtre. Pour une capture d'écran, ajoute `<img src="assets/projet1.jpg" alt="...">` dans `.project__thumb`.
-- **Contact** : ajoute ton e-mail ou tes réseaux dans la section « Contact ».
-- **Couleur principale** : variable `--accent` en haut de `style.css`.
+- **Textes** : tout est dans `index.html`.
+- **Un projet** : ajoute une ligne `<li class="index__row">` dans la liste des travaux, et ses chemins dans la carte (`data-p` et `data-n` dans le SVG).
+- **Photo** : aucune photo de toi pour l'instant ; la page s'en passe.
+- **Couleur** : `--color-accent` dans `tokens.css`.
 
 ## Tester en local
 
