@@ -218,6 +218,8 @@ html:not(.js) .seg { display: none; }
 .lines dd { margin: 0; min-width: 0; display: flex; flex-wrap: wrap; align-items: baseline; gap: var(--space-xs) var(--space-lg); }
 .lines a { font-size: var(--text-lead); font-weight: 500; color: var(--color-ink); text-decoration: underline; text-decoration-color: var(--color-rule); text-underline-offset: 0.2em; overflow-wrap: anywhere; transition: text-decoration-color var(--dur-short) var(--ease-out); }
 .lines a.lines__wa { font-size: var(--text-md); }
+.lines a.lines__net { font-size: var(--text-md); }
+.lines__net span { color: var(--color-ink-2); font-weight: 400; }
 .lines__val { font-size: var(--text-lead); font-weight: 500; color: var(--color-ink); }
 .lines a:hover { text-decoration-color: var(--color-accent); }
 .lines a:focus-visible { outline: 2px solid var(--color-focus); outline-offset: 3px; }
