@@ -102,6 +102,7 @@ html { scroll-padding-top: calc(var(--mast-h) + var(--space-lg)); }
 .index__text { grid-column: 4 / 9; display: grid; gap: var(--space-sm); align-content: start; }
 .index__text p:first-child { color: var(--color-ink-2); max-width: 60ch; }
 .index__stack { color: var(--color-muted); font-size: var(--text-sm); }
+.index__note { padding-left: var(--space-md); border-left: 2px solid var(--color-accent); color: var(--color-ink); font-weight: 500; }
 .index__links { display: flex; flex-wrap: wrap; gap: var(--space-xs) var(--space-lg); }
 .index__phones { grid-column: 9 / -1; display: flex; gap: var(--space-lg); justify-content: flex-end; }
 .index__phone { margin: 0; width: min(180px, 100%); display: grid; gap: var(--space-xs); }
