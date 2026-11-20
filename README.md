@@ -1,6 +1,6 @@
 # dossobaby.github.io
 
-Mon portfolio personnel, en ligne sur **https://dossobaby.github.io**.
+Portfolio d'Abdrahamane Aly TRAORE, en ligne sur **https://dossobaby.github.io**.
 
 Site statique (HTML, CSS, JavaScript), sans dépendance ni étape de build, hébergé gratuitement par GitHub Pages.
 
