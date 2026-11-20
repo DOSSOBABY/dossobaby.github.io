@@ -35,7 +35,7 @@ const projects = document.querySelectorAll('.project');
 chips.forEach((chip) => chip.addEventListener('click', () => {
   chips.forEach((c) => { c.classList.toggle('is-active', c === chip); c.setAttribute('aria-pressed', String(c === chip)); });
   const f = chip.dataset.filter;
-  projects.forEach((p) => { p.hidden = f !== 'all' && p.dataset.cat !== f; });
+  projects.forEach((p) => { p.hidden = f !== 'all' && !p.dataset.cat.split(' ').includes(f); });
 }));
 
 // Lien actif dans le menu + apparition des sections
