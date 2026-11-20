@@ -9,6 +9,10 @@
 /* Hallmark · reworded every section head into what the visitor sees, and "Fadi’s" to "Fadi’s Immobilier" at the owner’s request · 54 names the numbered eyebrows, 19 the dashes */
 
 :root {
+  /* Couleurs officielles des applications, pour leurs seules icônes */
+  --brand-ink: oklch(16% 0.005 250); --brand-on: oklch(99% 0.003 250);
+  --brand-whatsapp: #25d366; --brand-snapchat: #fffc00;
+  --brand-tiktok-cyan: #25f4ee; --brand-tiktok-red: #fe2c55;
   --mast-h: 72px;
   --thumb-ratio: 16 / 10;
 }
@@ -220,9 +224,16 @@ html:not(.js) .seg { display: none; }
 .lines a.lines__wa { font-size: var(--text-md); }
 .lines a.lines__net, .lines a.lines__wa { display: inline-flex; align-items: center; gap: var(--space-xs); min-height: 44px; font-size: var(--text-md); }
 .lines__net span { color: var(--color-ink-2); font-weight: 400; }
-.ico { width: 20px; height: 20px; flex: none; fill: currentColor; }
+.ico { width: 24px; height: 24px; flex: none; }
+.ico__bg { fill: var(--brand-ink); }
+.ico__g { fill: var(--brand-on); }
+.ico--whatsapp .ico__bg { fill: var(--brand-whatsapp); }
+.ico--snapchat .ico__bg { fill: var(--brand-snapchat); }
+.ico__g--outline { stroke: var(--brand-ink); stroke-width: 1.6; stroke-linejoin: round; paint-order: stroke; }
+.ico__c1 { fill: var(--brand-tiktok-cyan); }
+.ico__c2 { fill: var(--brand-tiktok-red); }
 .btn--ico { gap: var(--space-xs); }
-.btn--ico .ico { width: 18px; height: 18px; }
+.btn--ico .ico { width: 22px; height: 22px; }
 .lines__val { font-size: var(--text-lead); font-weight: 500; color: var(--color-ink); }
 .lines a:hover { text-decoration-color: var(--color-accent); }
 .lines a:focus-visible { outline: 2px solid var(--color-focus); outline-offset: 3px; }
